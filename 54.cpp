@@ -15,8 +15,8 @@ int main () {
 	float soma = 0;
 	
 	for (i = 0; i < 10; i++) {
-     	  printf("Numeros\n");
-       scanf("%f", &numeros[10]);	 
+     	printf("Numeros:\n");
+       scanf("%f", &numeros[i]);	 
     
      if (numeros[i] < 0) 
 	  {
@@ -29,11 +29,11 @@ int main () {
 	 }
 	 
 	  for ( i = 0; i < 10; i++){ 
-	     printf("Numero: %f:\n", numeros[i]);	
+	     printf("Numero: %.1f\n", numeros[i]);	
 	}
 	 
 	 printf("Quantidade de números negativos %d:\n",quantidadenegativo );	
-	 printf("Soma dos números positivos %f:\n", soma);	
+	 printf("Soma dos números positivos %.1f:\n", soma);	
 	 
 	return 0;
 	}
